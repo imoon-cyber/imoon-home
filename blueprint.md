@@ -33,6 +33,7 @@ Implement a theme-switching feature that allows users to toggle between a dark m
 2.  **Update CSS for theming:** 
     *   Define two color palettes (dark and light) using CSS variables.
     *   Create a `.light-mode` class on the `body` to apply the light theme.
+    *   **Adjust logo color:** The logo color will be white in dark mode and dark blue in light mode.
 3.  **Implement theme switching in JavaScript:**
     *   In `main.js`, add an event listener to the toggle button.
     *   When the button is clicked, toggle the `.light-mode` class on the `body` element.
