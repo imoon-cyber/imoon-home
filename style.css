@@ -7,7 +7,6 @@
     --card-bg: #1e1e1e;
     --border-color: #343a40;
     --header-bg: rgba(18, 18, 18, 0.8);
-    --logo-color: #ffffff;
 }
 
 * {
@@ -50,10 +49,14 @@ header .container {
     align-items: center;
 }
 
+.logo-link {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--logo-color);
+    height: 40px;
+    width: auto;
 }
 
 .desktop-nav ul {
