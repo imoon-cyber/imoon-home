@@ -1,9 +1,8 @@
-
-# Blueprint: IMOON Robotics Website
+# Project Blueprint: IMOON Robotics Website
 
 ## Overview
 
-This document outlines the design and development plan for the IMOON Robotics company website. The goal is to create a modern, visually appealing, and informative website that showcases the company's expertise in healthcare robotics.
+This document outlines the design, features, and implementation plan for the IMOON Robotics corporate website. The website will serve as a professional online presence for the company, showcasing its mission, products, and services.
 
 ## Style and Design
 
@@ -16,20 +15,25 @@ This document outlines the design and development plan for the IMOON Robotics co
 
 ## Features
 
-*   **Homepage:** A compelling introduction to IMOON Robotics, highlighting their mission and key offerings. The hero section will feature a background video.
-*   **About Us:** A section detailing the company's story, team, and values.
-*   **Our Robots:** A showcase of the different healthcare robots developed by IMOON Robotics, displayed side-by-side.
-*   **Services:** An overview of the services offered, including robot deployment, maintenance, and support.
-*   **Contact:** A simple and accessible contact form and contact information.
-*   **Navigation:** A clear and intuitive navigation menu.
-*   **Footer:** A standard footer with copyright information and links to social media.
+*   **Header:** A sticky header containing the company logo and navigation menu.
+*   **Hero Section:** A full-screen hero section with a background video and a compelling headline.
+*   **About Us Section:** A section detailing the company's mission and vision.
+*   **Robots Section:** A section showcasing the company's robot products.
+*   **Services Section:** A section outlining the services offered by the company.
+*   **Contact Section:** A section with a contact form and other contact information.
+*   **Footer:** A footer with copyright information and social media links.
 
-## Current Task: Implement Dark Theme
+## Current Plan: Add Dark/Light Mode Toggle
 
-This is the plan to switch the website to a dark theme.
+### Overview
+Implement a theme-switching feature that allows users to toggle between a dark mode and a light mode.
 
-1.  **Modify `style.css`:**
-    *   Update the root color variables to a dark theme palette.
-    *   Adjust the background colors of the body, header, sections, cards, and footer.
-    *   Change text colors to ensure high contrast and readability against the dark backgrounds.
-    *   Update border and box-shadow colors to fit the dark aesthetic.
+### Steps
+1.  **Add a theme toggle button:** Add a button or switch to the header of the `index.html` file.
+2.  **Update CSS for theming:** 
+    *   Define two color palettes (dark and light) using CSS variables.
+    *   Create a `.light-mode` class on the `body` to apply the light theme.
+3.  **Implement theme switching in JavaScript:**
+    *   In `main.js`, add an event listener to the toggle button.
+    *   When the button is clicked, toggle the `.light-mode` class on the `body` element.
+    *   Store the user's theme preference in `localStorage` to persist the chosen theme across sessions.
