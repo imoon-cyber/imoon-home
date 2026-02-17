@@ -90,27 +90,36 @@ nav a:hover {
 }
 
 .theme-toggle-btn {
-    background: none;
-    border: none;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--border-color);
     cursor: pointer;
-    font-size: 1.2rem;
     margin-left: 20px;
-    padding: 5px;
-    color: var(--text-color);
+    padding: 8px 12px;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.theme-toggle-btn .moon-icon {
+.theme-toggle-btn:hover {
+    opacity: 0.8;
+}
+
+.dark-mode-text {
     display: none;
 }
 
-.light-mode .theme-toggle-btn .sun-icon {
-    display: none;
-}
-
-.light-mode .theme-toggle-btn .moon-icon {
+.light-mode-text {
     display: inline;
 }
 
+.light-mode .light-mode-text {
+    display: none;
+}
+
+.light-mode .dark-mode-text {
+    display: inline;
+}
 
 .hero {
     position: relative;
