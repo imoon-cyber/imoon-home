@@ -90,34 +90,24 @@ nav a:hover {
 }
 
 .theme-toggle-btn {
-    background-color: var(--secondary-color);
-    border: 1px solid var(--border-color);
+    background: none;
+    border: none;
     cursor: pointer;
+    font-size: 1.2rem;
     margin-left: 20px;
-    padding: 8px 12px;
-    color: #ffffff;
-    border-radius: 5px;
-    font-weight: 500;
-    transition: background-color 0.3s, color 0.3s;
+    padding: 5px;
+    color: var(--text-color);
 }
 
-.theme-toggle-btn:hover {
-    opacity: 0.8;
-}
-
-.dark-mode-text {
+.theme-toggle-btn .moon-icon {
     display: none;
 }
 
-.light-mode-text {
-    display: inline;
-}
-
-.light-mode .light-mode-text {
+.light-mode .theme-toggle-btn .sun-icon {
     display: none;
 }
 
-.light-mode .dark-mode-text {
+.light-mode .theme-toggle-btn .moon-icon {
     display: inline;
 }
 
@@ -128,6 +118,10 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
+    color: #fff;
+}
+
+.light-mode .hero {
     color: #fff;
 }
 
@@ -161,11 +155,13 @@ nav a:hover {
 .hero h2 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
+    color: #fff;
 }
 
 .hero p {
     font-size: 1.25rem;
     margin-bottom: 2rem;
+    color: #fff;
 }
 
 .btn {
@@ -195,7 +191,17 @@ section h2 {
 }
 
 .about p,
-.services p,
+.services p {
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.contact {
+    text-align: center;
+}
+
 .contact p {
     max-width: 800px;
     margin: 0 auto 2rem auto;
